@@ -1,0 +1,71 @@
+<div id="menu_plain">
+    <div class="panel" page="menu">
+        <div id="menu_box" class="center_me">
+            <input id="button_menu_tolisting" type="button" value="لیست بازی ها" /><br />
+            <input id="button_menu_rejoin" type="button" value="ورود مجدد به بازی" /><br />
+            <input id="button_menu_ragequit" type="button" value="ترک بازی" /><br />
+            <input id="button_menu_settings" type="button" value="تنظیمات" /><br />
+            <input id="button_menu_logout" type="button" value="خروج" />
+        </div>
+    </div>
+    <div class="panel" page="joining">
+        <div id="game_menu_message_container">
+            <div id="game_menu_message_overlay">&nbsp;</div>
+            <div id="game_menu_message_box" class="center_me">
+                <div class="title">در حال ورود به بازی</div>
+                <div class="remaining">_</div>
+                <div class="buttons"><input type="button" id="button_menu_cancelrejoin" value="لغو ورود"/></div>
+            </div>
+        </div>
+    </div>
+    <div class="panel" page="settings">
+        <div id="settings_box" class="center_me">
+            تنظیمات!<br />
+            <div id="settings_container"></div>
+            <input id="button_settings_save" type="button" value="ذخیره" />
+            <input id="button_settings_discard" type="button" value="لغو" />
+        </div>
+    </div>
+    <div class="panel" page="listing">
+        <div id="listing_box" class="center_me">
+            <div id="listing_servers_container">
+
+            </div>
+            <div id="listing_servers_buttons">
+                <input type="button" value="ساخت بازی" id="button_listing_createserver" />
+                <input type="button" value="بازگشت" id="button_listing_back" />
+            </div>
+        </div>
+    </div>
+    <div class="panel" page="lobby">
+        <div id="lobby_box" class="center_me">
+            <div id="lobby_top">
+                <div id="lobby_name">
+                    بازی مافیا63 #1
+                    <input type="button" value="خروج از بازی" id="button_lobby_leave" />
+                </div>
+                <div id="lobby_players">
+                </div>
+                <div id="lobby_settings">
+                    <textarea id="textarea_lobby_settings"></textarea>
+                </div>
+                <div id="lobby_ready">
+                    <input type="button" value="" id="button_lobby_ready" />
+                </div>
+            </div>
+            <div id="lobby_bottom">
+                <div id="lobby_chat_container">
+                    <div id="lobby_chat_content">
+
+                    </div>
+                    <div id="lobby_chat_submit">
+                        <form id="form_lobby_chat">
+                            <input type="text" id="input_lobby_chatmessage" name="lobby_chatmessage" />
+                            <input type="submit" value="ارسال" id="button_lobby_chatsend" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

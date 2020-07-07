@@ -1,0 +1,181 @@
+<div id="menu_mafia">
+    <div id="menu_mafia_overlay">
+        <div id="chat_footer" class="animated animation_on">
+            <div id="overlay_left">
+                <div id="button_home" class="overlay_button" title="به «خانه» خوش آمدید!">&nbsp;</div>
+                <div id="button_help" class="overlay_button" title="کمک">&nbsp;</div>
+            </div>
+            <div id="overlay_chatbox" class="box_container">
+                <div class="head">
+                    <span class="head_text">چت: نام کاربری</span>
+                    <div id="chatbox_head_close" class="button"><div class="head_icon button_icon close"></div></div>
+                    <div id="chatbox_head_minimize" class="button"><div class="head_icon button_icon minimize"></div></div>
+                </div>
+                <div id="chatbox_container"></div>
+                <div id="chatbox_form_container">
+                    <form type="post">
+                        <input type="text" id="input_chat_chatmessage" class="mafinput" />
+                        <input type="submit" id="button_chat_send" class="mafbutton" value="ارسال" />
+                    </form>
+                </div>
+            </div>
+            <div id="overlay_mid"></div>
+            <div id="overlay_right">
+                <div id="friend_request_hint_container" class="animated">
+                    <div id="friend_request_hint">_</div>
+                    <div id="friend_request_hint_arrow"></div>
+                </div>
+                <div id="button_friends" class="overlay_button" title="_">
+                    <div id="button_friends_inner">0</div>
+                </div>
+            </div>
+            <div id="friends_listbox" class="box_container">
+                <div class="head">
+                    <span class="head_text">دوستان</span>
+                </div>
+                <div id="friends_mid">
+                    <div id="friends_list"></div>
+                    <div id="friend_requests_list">_</div>
+                </div>
+                <div id="friends_foot">
+                    <div id="button_friends_add">+ اضافه کردن دوست</div>
+                    <div id="button_friends_requests">دعوتنامه ها (<span id="button_friends_requests_value"></span>)</div>
+                </div>
+            </div>
+            <div id="help_container" class="box_container">
+                <div class="head">
+                    <span class="head_text">کمک</span>
+                    <div id="help_head_minimize" class="button"><div class="head_icon button_icon minimize draggable_exclude"></div></div>
+                </div>
+                <div class="body">
+                    <div id="help_address_container"></div>
+                    <div id="help_body_container"></div>
+                    <div id="help_body_size" class="button"><div class="head_icon button_icon resize"></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mafioso_background" class="animated">&nbsp;</div>
+    <div class="center_title"><div class="main_title">&nbsp;</div></div>
+    <div class="panel" page="menu">
+        <div id="menu_box" class="animated">
+            <div class="menu_button active" id="button_menu_tolisting"><span class="inner">لیست بازی ها</span></div>
+            <div class="menu_spacer active">&nbsp;</div>
+            <div class="menu_button active" id="button_menu_rejoin"><span class="inner">ورود مجدد به بازی</span></div>            <div class="menu_button active" id="button_menu_ragequit"><span class="inner">ترک بازی</span></div>
+            <div class="menu_spacer active">&nbsp;</div>
+            <div class="menu_button active" id="button_menu_settings"><span class="inner">تنظیمات</span></div>
+            <div class="menu_button active" id="button_menu_logout"><span class="inner">خروج</span></div>
+        </div>
+    </div>
+    <div class="panel" page="settings">
+        <div class="center_box_x">
+            <div id="settings_box" class="animated">
+                <div class="tabs_header"></div>
+                <div class="tabs_body">
+                    <div class="upper">
+                        <div id="settings_container"></div>
+                    </div>
+                    <div class="lower">
+                        <div class="left">
+                            <input type="button" value="لغو تغییرات" class="mafbutton" id="button_settings_discard" />
+                        </div>
+                        <div class="right">
+                            <input type="button" value="ذخیره تغییرات" class="mafbutton" id="button_settings_save" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel" page="listing">
+        <div class="center_box_x">
+            <div id="listing_box" class="animated">
+                <div class="upper">
+                    <div class="games_listing_container">
+                        <div class="head">
+                            <div class="head_inner">
+                                <div class="row">
+                                    <div class="col p10"><div class="inner">وضعیت</div></div>
+                                    <div class="col p10"><div class="inner">بازیکن ها</div></div>
+                                    <div class="col p30"><div class="inner">نام</div></div>
+                                    <div class="col p45"><div class="inner">تنظیمات</div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <div class="body_inner" id="games_listing_body"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lower">
+                    <div class="left">
+                        <input type="button" value="بازگشت به فهرست" class="mafbutton" id="button_listing_back" />
+                    </div>
+                    <div class="right">
+                        <input type="button" value="ساخت بازی" class="mafbutton" id="button_listing_createserver" />
+                        <input type="button" value="عضویت در بازی" class="mafbutton" id="button_listing_joinserver" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel" page="lobby">
+        <div class="center_box_x">
+            <div id="lobby_box">
+                <div class="bottom_container animated">
+                    <div class="upper">
+                        <div id="lobby_chat_content"></div>
+                    </div>
+                    <div class="lower">
+                        <div class="right">
+                            <form id="form_lobby_chat">
+                                <input type="text" id="input_lobby_chatmessage" class="mafinput" name="lobby_chatmessage" />
+                                <input type="submit" value="ارسال" class="mafbutton" id="button_lobby_chatsend" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="top_container animated">
+                    <div class="upper">
+                        <div id="game_settings_title">Josh's Game</div>
+                        <div id="game_settings_container">_</div>
+                    </div>
+                    <div class="lower">
+                        <div class="right">
+                            <input type="button" value="تنظیمات بازی" class="mafbutton" id="button_lobby_settings" />
+                            <input type="button" value="من آماده ام!" class="mafbutton" id="button_lobby_ready" />
+                        </div>
+                    </div>
+                </div>
+                <div class="right_container animated">
+                    <div class="upper">
+                        <div id="lobby_playerlist_connected"><span>_</span> بازیکنان: </div>
+                        <div id="lobby_playerlist_content"></div>
+                    </div>
+                    <div class="lower">
+                        <div class="right">
+                            <input type="button" value="ترک بازی" class="mafbutton" id="button_lobby_leave" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="game_settings_editor_modal" class="hidden">
+            <div class="center_box_x center_box_y">
+                <div id="game_settings_editor" class="box_container animated">
+                    <div class="head">تنظیمات بازی</div>
+                    <div class="body">_</div>
+                    <div class="foot">
+                        <div class="position_left">
+                            <input id="button_lobby_settings_close" type="button" class="mafbutton" value="بازگشت به صفحه اصلی">
+                            <input id="button_lobby_settings_discard" type="button" class="mafbutton" value="لغو تغییرات">
+                        </div>
+                        <div class="position_right">
+                            <input id="button_lobby_settings_save" type="button" class="mafbutton" value="ذخیره تغییرات">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,165 @@
+<div id="game_plain">
+    <div class="panel" page="pre">
+        <div id="pre_joined_box">_</div>
+        <div id="pre_box" class="center_me">
+            <form id="form_pre_namechoice">
+                <span>نام بازیکن ناشناس</span><br />
+                <input type="text" id="input_pre_name" name="pre_name" /><br />
+                <input type="submit" value="تأیید" id="button_pre_submit" /><br />
+                <span id="pre_countdown">_</span>
+            </form>
+        </div>
+    </div>
+    <div class="panel" page="game">
+        <div id="game_box">
+            <div id="game_leftcol">
+                <div id="game_left_top">
+                    <div id="game_menu">
+                        <input type="button" value="فهرست" id="button_game_menu" />
+                    </div>
+                </div>
+                <div id="game_left_bottom">
+                    <div id="game_left_topbox">
+                        <div id="game_graveyard">
+                            <div id="game_graveyard_title">
+                                قبرستان
+                            </div>
+                            <div id="game_graveyard_content"></div>
+                        </div>
+                    </div>
+                    <div id="game_left_bottombox">
+                        <div id="game_playerlist">
+                            <div id="game_playerlist_title"></div>
+                            <div id="game_playerlist_description"></div>
+                            <div id="game_playerlist_content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="game_midcol">
+                <div id="game_mid_top">
+                    <div id="game_mid_headbox">
+                        <div id="game_timeleft">
+                            4.0 ثانیه
+                        </div>
+                    </div>
+                </div>
+                <div id="game_mid_bottom">
+                    <div id="game_mid_bottombox">
+                        <div id="game_lynch">
+                            <span id="game_lynch_name">آیا شما این شخص را گناهکار می دانید؟</span><br /><br />
+                            <div id="game_lynch_options">
+                                <label for="game_lynch_innocent">بی گناه</label>
+                                <input type="checkbox" id="game_lynch_innocent" vote="-1" />
+                                <label for="game_lynch_novote">بدون رأی</label>
+                                <input type="checkbox" id="game_lynch_novote" vote="0" />
+                                <label for="game_lynch_guilty">گناهکار</label>
+                                <input type="checkbox" id="game_lynch_guilty" vote="1" />
+                            </div>
+                        </div>
+                        <div id="game_display_message"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="game_rightcol">
+                <div id="game_right_top">
+                    <div id="game_right_headbox">
+                        <div id="game_phase">
+                            <div id="game_phase_content">
+                                فاز گفتگو
+                            </div>
+                        </div>
+                        <div id="game_day">
+                            <div id="game_day_content">
+                                روز 9
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="game_right_bottom">
+                    <div id="game_right_topbox">
+                        <div id="game_roleinfo">
+                            <div id="game_roleinfo_title">
+                                Mafiaso
+                            </div>
+                            <div id="game_roleinfo_image">
+                                &nbsp;
+                            </div>
+                            <div id="game_roleinfo_description">
+                                The Mafiaso role sides with the Mafia team, with the objective of
+                                eliminating all of the town.
+                            </div>
+                        </div>
+                    </div>
+                    <div id="game_right_bottombox">
+                        <div id="game_chat">
+                            <div id="game_chat_title">
+                                گفتگو
+                            </div>
+                            <div id="game_chat_audiance">
+                                <select id="select_game_chat_receiver" name="game_chat_receiver">
+                                    <option>تمام بازیکنان</option>
+                                    <option>از طرف: X</option>
+                                    <option>از طرف: Y</option>
+                                    <option>از طرف: Z</option>
+                                </select>
+                            </div>
+                            <div id="game_chat_container">
+                            </div>
+                            <div id="game_chat_submit">
+                                <form id="form_game_chat">
+                                    <input type="text" id="input_game_chatmessage" name="game_chatmessage" />
+                                    <input type="submit" value="ارسال" id="button_game_chatsend" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="game_death_container">
+                <div id="game_death_overlay">&nbsp;</div>
+                <div id="game_death_box" class="center_me">
+                    <div class="text"></div>
+                    <div class="image"></div>
+                </div>
+            </div>
+            <div id="game_rolechange_container">
+                <div id="game_rolechange_overlay">&nbsp;</div>
+                <div id="game_rolechange_box" class="center_me">
+                    <div class="text"></div>
+                    <div class="image"></div>
+                </div>
+            </div>
+            <div id="game_events_block" tabindex="1">&nbsp;</div>
+        </div>
+    </div>
+    <div class="panel" page="post">
+        <div id="post_box" class="center_me">
+            <div id="post_top">
+                <div id="post_victory">پیام پیروزی</div>
+                <div id="post_sub_victory">نام ها</div>
+            </div>
+            <div id="post_top_right"><input type="button" id="button_post_menureturn" value="ترک بازی" /></div>
+            <div id="post_mid">
+                <div id="post_scoreboard">
+                    <div class="post_scoreboard_player">Neo(X) پدرخوانده بود</div>
+                    <div class="post_scoreboard_player">Morpheus(Y) مافیوسو بود</div>
+                    <div class="post_scoreboard_player">Trinity(Z) کارآگاه بود</div>
+                </div>
+            </div>
+            <div id="post_bottom">
+                <div id="post_chat_container">
+                    <div id="post_chat_content">
+                        <span>شما باختید! گروه مافیا برنده شدند!</span>
+                    </div>
+                    <div id="post_chat_submit">
+                        <form id="form_post_chat">
+                            <input type="text" id="input_post_chatmessage" name="post_chatmessage" />
+                            <input type="submit" value="ارسال" id="button_post_chatsend" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

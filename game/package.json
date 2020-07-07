@@ -1,0 +1,20 @@
+{
+  "name": "playmafia",
+  "subdomain": "playmafia",
+  "main": "index.js",
+  "version": "0.0.1",
+  "engines": {
+    "node": "0.8.15"
+  },
+  "dependencies": {
+    "entities": "0.3.0",
+    "redis": "0.7.1",
+    "rpsc": "0.0.2",
+    "bcrypt-nodejs": "0.0.3",
+    "express": "3.1.0",
+    "sockjs": "0.3.7"
+  },
+  "optionalDependencies": {
+    "hiredis": "0.1.14"
+  }
+}
